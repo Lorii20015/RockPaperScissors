@@ -7,7 +7,7 @@ namespace RockPaperScissors
     {
         static string intro = "Hello!\nWelcome to rock, paper, scissors! Try to win by predicting the computer!\n\n      rock\n    /     /\npaper <-- scissors\n\nStop playing at any time by typing 'back' or 'b'!\n(rock/R/paper/P/scissors/S)\n";
         static string hidden;
-        static int end;
+        static int end = 0;
         static int wins = 0;
         static int loses = 0;
         static int rounds = 1;
@@ -98,6 +98,7 @@ namespace RockPaperScissors
             else if (guess == "back")
             {
                 Console.WriteLine("You chose to stop playing!");
+                end++;
             }
             else
             {
