@@ -81,7 +81,7 @@ namespace RockPaperScissors
             if (hidden == guess)
             {
                 Console.WriteLine("Your guess was " + guess + " and the computer picked... " + hidden + "!\nIt's a tie!");
-
+                rounds++;
             }
             else if ((hidden == "Rock" && guess == "Paper") || (hidden == "Paper" && guess == "Scissors") || (hidden == "Scissors" && guess == "Rock"))
             {
